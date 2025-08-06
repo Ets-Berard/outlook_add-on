@@ -2,8 +2,8 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:bt="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
            xsi:type="MailApp">
-  <Id>com.chatgpt.outlook.addin</Id>
-  <Version>1.1.0.3</Version>
+  <Id>b8f3a36b-4a8d-4f5b-9b52-7f0a8b2e7f15</Id>
+  <Version>1.1.0.5</Version>
   <ProviderName>Julien COQUELLE</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
   <DisplayName DefaultValue="ChatGPT Assistant" />
