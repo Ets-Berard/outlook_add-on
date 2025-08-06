@@ -1,0 +1,31 @@
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="MessageReadCommandSurface">
+  <Id>com.chatgpt.outlook.addin</Id>
+  <Version>1.1.0.1</Version>
+  <ProviderName>Julien COQUELLE</ProviderName>
+  <DefaultLocale>fr-FR</DefaultLocale>
+  <DisplayName DefaultValue="ChatGPT Assistant" />
+  <Description DefaultValue="Résumé, rédaction, reformulation intelligente et insertion directe dans les brouillons avec ChatGPT." />
+  <IconUrl DefaultValue="https://ets-berard.github.io/outlook_add-on/icon.png" />
+  <Hosts>
+    <Host Name="Mailbox" />
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.8">
+      <Set Name="Mailbox" />
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://ets-berard.github.io/outlook_add-on/panel.html" />
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="ItemIs" ItemType="Message" />
+  <Action xsi:type="ShowTaskpane">
+    <SourceLocation DefaultValue="https://ets-berard.github.io/outlook_add-on/panel.html" />
+  </Action>
+</OfficeApp>
