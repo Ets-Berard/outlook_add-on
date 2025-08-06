@@ -19,18 +19,16 @@
       <Set Name="Mailbox" />
     </Sets>
   </Requirements>
-  <!-- Section obligatoire avec hauteur -->
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
         <SourceLocation DefaultValue="https://ets-berard.github.io/outlook_add-on/panel.html" />
-        <RequestedHeight>600</RequestedHeight>
+        <RequestedHeight>350</RequestedHeight>
       </DesktopSettings>
     </Form>
   </FormSettings>
   <Permissions>ReadWriteItem</Permissions>
   <Rule xsi:type="ItemIs" ItemType="Message" />
-  
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="VersionOverridesV1_0">
     <Requirements>
       <bt:Sets DefaultMinVersion="1.3">
