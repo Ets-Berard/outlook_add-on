@@ -3,7 +3,7 @@
            xmlns:bt="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
            xsi:type="MailApp">
   <Id>b8f3a36b-4a8d-4f5b-9b52-7f0a8b2e7f15</Id>
-  <Version>1.1.0.9</Version>
+  <Version>1.1.1.1</Version>
   <ProviderName>Julien COQUELLE</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
   <DisplayName DefaultValue="ChatGPT Assistant" />
@@ -20,9 +20,9 @@
     </Sets>
   </Requirements>
 
-  <!-- Section obligatoire pour compatibilité avec Outlook -->
+  <!-- Correction : ajout explicite de FormType -->
   <FormSettings>
-    <Form xsi:type="ItemRead">
+    <Form xsi:type="ItemRead" FormType="Read">
       <DesktopSettings>
         <SourceLocation DefaultValue="https://ets-berard.github.io/outlook_add-on/panel.html" />
         <RequestedHeight>350</RequestedHeight>
@@ -33,7 +33,6 @@
   <Permissions>ReadWriteItem</Permissions>
   <Rule xsi:type="ItemIs" ItemType="Message" />
 
-  <!-- Commandes modernes via VersionOverrides -->
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="VersionOverridesV1_0">
     <Requirements>
       <bt:Sets DefaultMinVersion="1.3">
