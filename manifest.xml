@@ -3,7 +3,7 @@
            xmlns:bt="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
            xsi:type="MailApp">
   <Id>b8f3a36b-4a8d-4f5b-9b52-7f0a8b2e7f15</Id>
-  <Version>1.1.0.7</Version>
+  <Version>1.1.0.8</Version>
   <ProviderName>Julien COQUELLE</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
   <DisplayName DefaultValue="ChatGPT Assistant" />
@@ -19,6 +19,7 @@
       <Set Name="Mailbox" />
     </Sets>
   </Requirements>
+  <!-- Section obligatoire avec hauteur -->
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
@@ -29,6 +30,7 @@
   </FormSettings>
   <Permissions>ReadWriteItem</Permissions>
   <Rule xsi:type="ItemIs" ItemType="Message" />
+  
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="VersionOverridesV1_0">
     <Requirements>
       <bt:Sets DefaultMinVersion="1.3">
